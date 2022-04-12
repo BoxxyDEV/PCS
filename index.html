@@ -21,8 +21,40 @@
     <center>
         <img width="50vw" src="./data/PCS-Logo.png" alt="">
         <h1>Coming in 2022</h1>
-            <a style='color: white;" href="https://facebook.com/PerthConsoleServices">Visit Our Facebook Page</a>
+        <a style="color: white;" href="https://facebook.com/PerthConsoleServices">Visit Our Facebook Page</a>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPerthConsoleServices%2Fposts%2F109613248385970&show_text=true&width=500" width="500" height="170" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </center>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109595858387709");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>
+
     </center>
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
