@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,82 +11,173 @@
 </head>
 <style>
     body {
-        background-image: url(./data/ocean.jfif);
+        background-color: cornflowerblue;
+        color: white;
         font-family: Arial, Helvetica, sans-serif;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+.btn-big{
+    width: 200px;
+}
+.btn-small{
+    width: 95px;
+}
+.last{
+    margin-right: 0 !important;
+}
+.red{
+    background: #df0024;
+}
+.blue{ 
+    background: #00a9ec;
+}
+.orange{
+    background: #ff9000;
+}
+.green{
+    background: #0e5d30;
+    }
+
+    div[class^="btn"]{
+float: left;
+margin: 0 10px 10px 0;
+height: 95px;
+position: relative;
+cursor: pointer;
+transition: all .4s ease;
+border: solid 2px transparent;
+text-align:center;
+line-height:100px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 25%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+.colorlime {
+    color: limegreen;
+}
 </style>
 <body>
-    <center>
-        <img width="150vw" src="./data/PCS-Logo.png" alt="">
-        <h1>Coming in 2022</h1>
-        <a style="color: white;" href="https://facebook.com/PerthConsoleServices">Visit Our Facebook Page</a>
-        <p> </p>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPerthConsoleServices%2Fposts%2F109613248385970&show_text=true&width=500" width="350" height="170" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    </center>
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+    <header>
+        <h1>Perth Console Services</h1>
+        <h3>&#128205; Based in Perth, Western Australia</h3>
+        <h3>&#128181; All Prices are in Australian Dollar and We only accept cash.</h3>
+    </header>
+    <div class="wrap">
+        <a href="https://facebook.com/PerthConsoleServices"><div class="btn-big blue">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="label bottom">Facebook</span> 
+        </div></a>
+
+        <a href="https://www.youtube.com/channel/UCFb6CFtHJ_-cNvnCMnsIxyQ"><div class="btn-big red">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="label bottom">YouTube</span> 
+        </div></a>
+
+        <a href="https://twitter.com/PerthConsole"><div class="btn-big blue">
+            <i class="fa-brands fa-twitter"></i>
+            <span class="label bottom">Twitter</span> 
+        </div></a>
+
+        <a href="mailto:perthconsoleservices@gmail.com"><div class="btn-big orange">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="label bottom">Email Us</span> 
+        </div></a>
+        
+        <a href="/Storage">
+        <div class="btn-big green">
+            <i class="fa-solid fa-hard-drive"></i>
+            <span class="label bottom">Storage Upgrades</span> 
+        </div></a>
+        
+        <a href="/SoftMod"><div class="btn-big orange">
+            <i class="fa-solid fa-wrench"></i>
+            <span class="label bottom">Softmod Services</span> 
+        </div></a>
     </div>
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "109595858387709");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <table>
+        <tr>
+            <th>Services</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <th>Softmodding Service</th>
+            <th>Please refer to this <a class="colorlime" href="/SoftMod/">Page</a></th>
+        </tr>
+        <tr>
+            <th>Graphics Card install + Driver Installation </th>
+            <th>$30</th>
+        </tr>
+        <tr>
+            <th>Upgrade RAM</th>
+            <th>$15</th>
+        </tr>
+        <tr>
+            <th>PS3/PS4/PS5 Storage Upgrade + Data Backup</th>
+            <th>$15</th>
+        </tr>
+        <tr>
+            <th>PC Storage Upgrade + Data Backup</th>
+            <th>$20</th>
+        </tr>
+        <tr>
+            <th>Support + Recommendations</th>
+            <th>Free</th>
+        </tr>
+    </table>
+<h4><b>About This</b></h4>
+<p>Hello There, i started this service in 2022 to help people upgrade, fix problems and show people cool stuff.</p>
+<p>My dream has been to build a computer for myself with all new components</p>
+<h4><b>About Me</b></h4>
+<p>I'm a 16 year old boy who loves Computers, Programming & Gaming. i have a heart condition which means i can not lift my own body weight or heavy objects and i do not have a clue where i should start as in terms of work. Seeing as i love computers and programming and thats why i started this service. I have been intersted in technlogy since around i was 5 (2011) or 6 (2012) using our family's Pentium 4 XP Machine from around 2003. I have since upgraded to a HP Laptop but i still dream of building my own PC.</p>
 </body>
-</html>
+<!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
 
-    </center>
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
 
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "109595858387709");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "109595858387709");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v13.0'
+    });
+  };
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-</body>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script src="https://kit.fontawesome.com/a0da2939db.js" crossorigin="anonymous"></script>
 </html>
